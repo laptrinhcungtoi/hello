@@ -57,7 +57,7 @@ else if(isset($_GET['ngay']) && $_GET['ngay']!="" && isset($_GET['daduyet']) && 
 									AND ls.datetime LIKE '$ngay%'
 									AND ls.status='$daduyet'
 									GROUP BY ls.user_id
-									ORDER BY MAX(id) DESC, user_id");
+									ORDER BY MAX(ls.id) DESC, user_id");
 	 
 	$result = array();	 
 	if (mysqli_num_rows($query) > 0)
@@ -68,6 +68,27 @@ else if(isset($_GET['ngay']) && $_GET['ngay']!="" && isset($_GET['daduyet']) && 
 	}
 	 
 	die (json_encode($result, JSON_UNESCAPED_UNICODE));
+}
+else if(isset($_GET['kiemtra']) && $_GET['kiemtra']!=""){
+	header('Content-Type: text/html; charset=utf-8');
+	 
+	$conn = mysqli_connect('localhost', 'root', '12345', 'vnptmap') or die ('Can not connect to mysql');
+	mysqli_query($conn,'SET NAMES utf8');
+
+	$sql_query="SELECT COUNT(*) AS soluong FROM locations";
+
+	$query = mysqli_query($conn, $sql_query);
+	 
+	$result = array();	 
+	if (mysqli_num_rows($query) > 0)
+	{
+	    while ($row = mysqli_fetch_assoc($query)){
+	        $result[] = $row;
+	    }
+	}
+	 
+	die (json_encode($result, JSON_UNESCAPED_UNICODE));
+
 }
 
 

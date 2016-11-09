@@ -8,21 +8,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="icon" href="images/benhvien.png" type="image/x-icon">
+
     <title>VNPT MAP</title>
 
+
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/vnpt_map.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/shop-homepage.css" rel="stylesheet">
 
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    
 
 
     <!--Jquery-->
     <link rel="stylesheet" href="resources/css/jquery-ui-redmond.1.9.1.css"  />
     <script src="resources/js/jquery.min.1.9.1.js" ></script>    
     <script src="resources/js/jquery-ui.1.9.1.js" ></script>
-
 
     <script src="js/googlemap.js"></script>
 
@@ -42,7 +47,7 @@
 
 </head>
 
-<body style="background-color:#f7f7f7;">
+<body style="background-color:#2c6784;">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -56,6 +61,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.php">VNPT MAP</a>
+                <div id="log" hidden >
+                    <span class="glyphicon glyphicon-bell" style="color:red;font-size: 25px;"></span>
+                </div>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -91,9 +99,7 @@
                 &nbsp;&nbsp;&nbsp;<input type="checkbox" name="daduyet" id="daduyet"> Đã xử lý
                 </div>
                 
-                <div id="log" hidden class="col-md-4">
-                    <span class="glyphicon glyphicon-bell" style="color:red;font-size: 30px;"></span>
-                </div>
+
                 <br/>
                 <div class="col-md-12">
                     <table id="dsnhanvien"></table>
@@ -109,7 +115,7 @@
                             <tr>
                                 
                                 <td class="text-right"><label>Họ tên:&nbsp;</label></td>
-                                <td colspan="3"><input type="text" id="hoten" style="font-size : 15px;color:blue;font-weight: bold;"  readonly="readonly" /><br></td>
+                                <td colspan="3"><input type="text" id="hoten" style="font-size : 15px;color:#31708f;font-weight: bold;"  readonly="readonly" /><br></td>
                                 <td class="text-right"><label>&nbsp;Số điện thoại:&nbsp;</label></td>
                                 <td><input type="text" id="sdt" readonly="readonly" /></td>
                             </tr>
@@ -134,7 +140,7 @@
                                 <td><label>&nbsp;</label></td>
                                 <td colspan="3">
                                     <form action="" menthod="post">
-                                        <input type="button" name="duyet" id="duyet" hidden  value="Xử lý xong" style="font-weight: bold;color:red;"  />
+                                        <input type="button" name="duyet" id="duyet" hidden  value="Xử lý xong" style="font-weight: bold;color:#31708f;"  />
                                     </form>
                                 </td>
                             </tr>
@@ -143,13 +149,12 @@
                         
                          
                          
+                      
                         
-                        <hr>
-                        
-                        <div id="mapholder"></div>
-                        <input type="button" name="prev" id="prev" hidden  value="<<"/>
-                        <input type="text" name="pagenumber" id="pagenumber" hidden size="1" disabled style="text-align:center;" />
-                        <input type="button" name="next" id="next" hidden  value=">>"/>
+                        <div id="mapholder" style="border:1px solid #bbb" ></div>
+                        <input type="button" name="prev" id="prev"   value="<<"/>
+                        <input type="text" name="pagenumber" id="pagenumber"  size="1" disabled style="text-align:center;" />
+                        <input type="button" name="next" id="next"   value=">>"/>
                     </div>
 
                 </div>
@@ -166,9 +171,9 @@
 
 
         <!-- Footer -->
-        <footer class="bg-primary">
+        <footer >
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center" style="color:#fff;font-weight:bold;">
                     <br>
                     <p>©2014-2015, Tập Đoàn Bưu Chính Viễn Thông Việt Nam</p>
                     <p>Địa chỉ: 57 Huỳnh Thúc Kháng - Q.Đống Đa - TP.Hà Nội</p>
@@ -284,8 +289,7 @@
                         if(daduyet==false)
                             $('#duyet').removeAttr('hidden');
 
-                        $('#prev').removeAttr('hidden');
-                        $('#next').removeAttr('hidden');
+
                         $('#pagenumber').removeAttr('hidden');
                     }
                 },
@@ -328,7 +332,7 @@
 
 
                 mapholder = document.getElementById('mapholder');
-                mapholder.style.height = '450px';
+                mapholder.style.height = '487px';
                 mapholder.style.width = '100%';
 
                 var map = new google.maps.Map(document.getElementById('mapholder'));
@@ -348,7 +352,7 @@
 
                 var latlon = new google.maps.LatLng(latitude, longitude)
                 mapholder = document.getElementById('mapholder')
-                mapholder.style.height = '450px';
+                mapholder.style.height = '487px';
                 mapholder.style.width = '100%';
 
                 var myOptions = {
@@ -380,6 +384,27 @@
 
               }
 
+              function load_bando_macdinh(latitude, longitude) {
+                if(typeof latitude == "undefined" || typeof latitude == "undefined") {
+                    console.log("Vị trí nhập vào không hợp lệ!");
+                }
+
+                var latlon = new google.maps.LatLng(latitude, longitude)
+                mapholder = document.getElementById('mapholder')
+                mapholder.style.height = '487px';
+                mapholder.style.width = '100%';
+
+                var myOptions = {
+                    center: latlon,
+                    zoom: 12            
+                };
+                var map = new google.maps.Map(document.getElementById('mapholder'), myOptions);
+
+
+              }
+
+              load_bando_macdinh(10.9780915,106.6540202);
+
 
 
               function calculateAndDisplayRoute(directionsService, directionsDisplay) {
@@ -398,7 +423,38 @@
                     });
                 }
 
-                 
+
+
+            var kt_soluong=0;
+            kt_soluong_load();
+
+            function kt_soluong_load(){
+                $.ajax({
+                    url : 'xuly.php?kiemtra=true',
+                    type : 'get',
+                    dataType : 'json',
+                    success : function (result){
+                        kt_soluong=result[0].soluong;
+                    }
+                });
+            }
+            
+
+            setInterval(function(){
+               $.ajax({
+                    url : 'xuly.php?kiemtra=true',
+                    type : 'get',
+                    dataType : 'json',
+                    success : function (result){
+                        var tam_soluong=result[0].soluong;
+                        if(tam_soluong!=kt_soluong){
+                            kt_soluong=tam_soluong;
+                            $('#log').removeAttr('hidden');
+                        }
+                        
+                    }
+                });
+            }, 5000);  
 
     </script>
 

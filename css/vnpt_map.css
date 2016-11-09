@@ -1,0 +1,200 @@
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input, optgroup, select, textarea {
+ margin: 0;
+    font: inherit;
+
+    border-radius: 25px;
+    border: 1px solid rgba(49, 112, 143, 0.54);
+  
+    padding-left: 15px;
+    background-color: #f5f5f5;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	    font-family: time;
+}
+
+#log{float: left;
+    padding: 10px;
+    top: 3x;
+    text-shadow: 1px 1px 12px #f5f5f5;}
+
+
+ #mapholder{
+height: 450px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+  
+    margin-bottom: 10px;
+}
+	
+	#tinhtrang{
+		    font-size: 15px;
+    font-weight: bold;
+
+    background-color: #31708f;
+    color: #f5f5f5;
+    width:100%;
+	}
+	
+	
+	#duyet{
+		    font-weight: bold;
+    color: #31708f;
+    backgroud-color: red;
+    background-color: #d9edf7;
+  
+	}
+	#duyet:hover{
+		-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.52);
+		-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.52);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.52);
+	}
+	
+	
+	
+	.col-md-4 {
+    width: 33.33333333%;
+    background-color: #2c6784;
+
+    color: white;
+    left: 0;
+    overflow: hidden;
+
+    padding: 10px;
+    width: 384px;
+    box-shadow: 2px 0px 9px #333;
+    -moz-box-shadow: 2px 0px 9px rgba(0, 0, 0, 0.3);
+   
+    z-index: 2;
+}
+
+
+
+#hoten{    font-size: 15px;
+    color: #1b4f7b;
+    font-weight: bold;
+}
+
+
+
+.carousel-holder {
+    margin-bottom: 30px;
+    background-color: #d2cdb1;
+    padding: 5px;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.bg-primary {
+    color: #fff;
+    background-color: #31708f;
+}
+<body style="background-color: #31708f;">
+
+
+.ui-datepicker td {
+    border: 1px solid #d9edf7;
+    /* padding: 1px; */
+}
+
+
+label{    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #184a63;
+    font-size: 15px;
+    float: left;
+    backgroud-color: #bbb;}
+	
+	
+	
+	
+	#laydsnhanvien{
+	margin: 2px;
+    border-radius: 33px;
+	}
+	
+	
+	
+	
+	.ui-jqgrid .ui-jqgrid-titlebar {
+    padding: .9em .2em .2em .3em;
+    position: relative;
+    font-size: 16px;
+    border-left: 0 none;
+    border-right: 0 none;
+    border-top: 0 none;
+    font-family: time;
+}
+
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #fff;
+    background: #31708f url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #fff;
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: time;
+    font-size: 14px;
+	}
+	
+	
+	ui-jqgrid .ui-jqgrid-caption {
+    text-align: left;
+    background-color: #31708f;
+}
+
+
+
+<table id="dsnhanvien" tabindex="0" cellspacing="0" cellpadding="0" border="0" role="grid" aria-multiselectable="false" aria-labelledby="gbox_dsnhanvien" class="ui-jqgrid-btable" style="width: 320px;"><tbody><tr class="jqgfirstrow" role="row" style="height:auto"><td role="gridcell" style="height:0px;width:50px;"></td><td role="gridcell" style="height:0px;width:151px;"></td><td role="gridcell" style="height:0px;width:101px;"></td></tr><tr role="row" id="1" tabindex="0" class="ui-widget-content jqgrow ui-row-ltr ui-state-highlight" aria-selected="true"><td role="gridcell" style="" title="1" aria-describedby="dsnhanvien_id">1</td><td role="gridcell" style="" title="Huy Linh" aria-describedby="dsnhanvien_name">Huy Linh</td><td role="gridcell" style="" title="0911046161" aria-describedby="dsnhanvien_phone">0911046161</td></tr><tr role="row" id="5" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr" aria-selected="false"><td role="gridcell" style="" title="5" aria-describedby="dsnhanvien_id">5</td><td role="gridcell" style="" title="Huy Linh 4" aria-describedby="dsnhanvien_name">Huy Linh 4</td><td role="gridcell" style="" title="06503846868" aria-describedby="dsnhanvien_phone">06503846868</td></tr><tr role="row" id="3" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr" aria-selected="false"><td role="gridcell" style="" title="3" aria-describedby="dsnhanvien_id">3</td><td role="gridcell" style="" title="Huy Linh 2" aria-describedby="dsnhanvien_name">Huy Linh 2</td><td role="gridcell" style="" title="06503846868" aria-describedby="dsnhanvien_phone">06503846868</td></tr></tbody></table>
+
+
+
+
+.navbar-inverse {
+    background-color: #2c6784;
+    border-color: #31708f;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+
+.navbar-inverse .navbar-brand {
+    color: #fcf8e3;
+    flat: right;
+    -moz-box-shadow: 0 0 67px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: 0 0 67px rgba(0, 0, 0, 0.52);
+    box-shadow: 0 2 67px rgba(0, 0, 0, 0.52);
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: rgb(95, 147, 173);
+    border-color: rgba(49, 112, 143, 0.05);
+}

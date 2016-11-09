@@ -1,0 +1,288 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 30, 2016, 9:39:43 PM
+    Author     : PHAT LY
+*/
+
+.hsba {
+    display: block;
+    font-size: 12px;
+    width: 100%;
+}
+.hsba > tbody {
+    display: table;
+    width: 100%;
+}
+.hsba td.hsba-50 {
+    width: 50%;
+}
+.hsba tr {
+    width: 100%;
+}
+.hsba > textarea {
+    display: inline-block;
+    width: 100%;
+}
+.hsba textarea {
+    width: 100%;
+}
+.hsba td {
+    vertical-align: top;
+}
+input[id$="_icd"] {
+    float: right;
+    width: 80px !important;
+}
+.hsba-50 > input[type="text"] {
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+    width: calc(60% - 80px);
+}
+.hsba-50 input[type="text"] {
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+}
+.hsba-50 select {
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+}
+.hsba-50 > label {
+    display: inline-block;
+    width: 145px;
+    text-align: left;
+}
+#txtsonha {
+    width: 80px;
+}
+#txtthon {
+    width: 213px;
+}
+#txtngaysinh {
+    width: 250px;
+}
+#txttuoi {
+    text-align: center;
+    width: 40px;
+}
+
+
+.row-item {
+    padding: 2px 0;
+}
+.hsba-kb h1 {
+    border-bottom: 1px solid #4e4e4e;
+    font-family: verdana;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+.hsba-kb textarea {
+    height: 60px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.hsba-table {
+    border: 1px solid #4e4e4e;
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+}
+.hsba-table td {
+    border: 1px solid #4e4e4e;
+    min-width: 20px;
+}
+.hsba-kb_item > table {
+    font-size: 12px;
+    width: 100%;
+}
+.hsba-kb_item td {
+    vertical-align: top;
+}
+.hsba-kb_item table textarea {
+    display: inline-block;
+    height: 132px;
+}
+.hsba-kb_item table ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.hsba-kb_item table li {
+    margin-bottom: 2px;
+    padding-left: 10px;
+    width: 100%;
+}
+.hsba-kb_item label {
+    display: inline-block;
+    width: 65px;
+}
+.width-70{
+    width: 65%;
+}
+.hsba-table input[type="checkbox"] {
+    vertical-align: middle;
+}
+.hsba-table input[type="checkbox"] {
+    vertical-align: middle;
+}
+.hsba-kb_item > textarea {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.tg td, .tg th {
+    border: 1px solid #4e4e4e;
+    padding: 2px;
+}
+.tg {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+selectorSavingError {
+    width: 50%;
+}
+.tg-031e:first-child {
+    width: 32%;
+}
+.tg th {
+    vertical-align: top;
+}
+.tg span, .tg strong {
+    display: inline-block;
+    width: 100%;
+}
+.hsba-kb .row-item label {
+    display: inline-block;
+    width: 165px;
+}
+.hsba-kb .row-item input[type="text"] {
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+    width: calc(100% - 170px);
+}
+.input-full{
+    width: 297px !important;
+}
+#hsba_chandoan .row-item label {
+    display: inline-block;
+    min-width: 170px;
+}
+#hsba_chandoan .row-item input[type="text"]:last-child {
+    float: right;
+    margin-right: 10px;
+}
+#hsba_tinhtrangravien .row-item label {
+    display: inline-block;
+    min-width: 170px;
+}
+#hsba_tinhtrangravien .row-item input[type="text"]:last-child {
+    float: right;
+    margin-right: 10px;
+}
+#txt_vaovien_gio {
+    width: 130px;
+}
+#txt_vaovien_ngay {
+    width: 120px;
+}
+#hsba_qlbn .row-item input[type="text"]:last-child {
+    float: right;
+}
+#hsba_qlbn .row-item > label {
+    display: inline-block;
+    width: 170px;
+}
+div[id*="hsba_"] {
+    margin-left: 20px;
+    width: 905px;
+}
+.hsba-kb_item {
+    margin-top: 5px;
+}
+#hsba_hanhchinh h3{
+    border-bottom: solid 1px #a2a2a2;
+}
+#hsba_tinhtrangravien h3{
+    border-bottom: solid 1px #a2a2a2;
+}
+div[id*=hsba_] h3{
+    border-bottom: solid 1px #a2a2a2;
+}
+.row-item > label {
+    display: inline-block;
+    text-align: left;
+    width: 145px;
+}
+.hsba select{
+    height: 20px;
+}
+.hsba-kb_item #tbl-tiensu input {
+    width: 50px;
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+}
+.hsba-kb_item #tbl-tiensu td, .hsba-kb_item #tbl-tiensu th {
+    border: 1px solid #4e4e4e;
+    border-collapse: collapse;
+    text-align: center;
+}
+.hsba-kb_item #tbl-tiensu {
+    border: 1px solid #4e4e4e;
+    border-collapse: collapse;
+}
+.row-item ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.row-item ul li {
+    display: inline-block;
+    float: left;
+    padding: 2px 0;
+    width: 50%;
+}
+.row-item ul li select {
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+    height: 20px;
+}
+.hsba-kb_item ul li input[type="text"] {
+    text-align: left;
+    width: 115px;
+}
+.hsba-kb_item ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.hsba-kb_item ul li ul li {
+    padding: 2px 0;
+}
+.row-item > select {
+    border-color: -moz-use-text-color;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+}
+.hsba-toolbar {
+    border-top: 1px solid #a2a2a2;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: right;
+    width: 100%;
+}
+.hsba-toolbar input {
+    margin-right: 5px;
+}
+

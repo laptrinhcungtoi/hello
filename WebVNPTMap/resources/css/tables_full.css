@@ -1,0 +1,10 @@
+.table_beauty table { border-collapse: collapse; text-align: left; width: 100%; } 
+.table_beauty {font-family: Verdana; font-size: 12px; background: #fff; overflow: hidden; border: 1px solid #C6C7C6; }
+.table_beauty table td, .table_beauty table th { padding: 5px 3px; }
+.table_beauty table thead th {background-color:#EFEBEF; color:#000; font-size: 12px;
+                             font-weight: normal; border-left: 1px solid #C6C7C6;  border-bottom: 1px solid #C6C7C6; 
+} 
+.table_beauty table thead th:first-child { border: none; border-bottom: 1px solid #C6C7C6; }
+.table_beauty table tbody td { color: #00496B; border-left: 1px solid #C6C7C6;font-size: 12px;font-weight: normal; }
+.table_beauty table tbody td:first-child { border-left: none; }
+.table_beauty table tbody tr:last-child td { border-bottom: none; }

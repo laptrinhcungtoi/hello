@@ -1,0 +1,191 @@
+.hsba {
+    display: block;
+    font-size: 12px;
+    width: 100%;
+}
+.hsba > tbody {
+    display: table;
+    width: 100%;
+}
+.hsba td.hsba-50 {
+    width: 50%;
+}
+.hsba tr {
+    width: 100%;
+}
+.hsba > textarea {
+    display: inline-block;
+    width: 100%;
+}
+.hsba textarea {
+    width: 100%;
+}
+.hsba td {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    vertical-align: top;
+}
+input[id$="_icd"] {
+    float: right;
+    width: 80px !important;
+}
+.hsba-50 > input[type="text"] {
+    width: calc(60% - 80px);
+}
+.hsba-50 > label {
+    display: inline-block;
+    width: 145px;
+    text-align: right;
+}
+#txtsonha {
+    width: 80px;
+}
+#txtthon {
+    width: 213px;
+}
+#txtngaysinh {
+    width: 250px;
+}
+#txttuoi {
+    text-align: center;
+    width: 40px;
+}
+
+
+.row-item {
+    padding: 5px 0;
+}
+.hsba-kb h1 {
+    border-bottom: 1px solid #4e4e4e;
+    font-family: verdana;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+.hsba-kb textarea {
+    height: 60px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.hsba-table {
+    border: 1px solid #4e4e4e;
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+}
+.hsba-table td {
+    border: 1px solid #4e4e4e;
+    min-width: 20px;
+}
+.hsba-kb_item > table {
+    font-size: 12px;
+    width: 100%;
+}
+.hsba-kb_item td {
+    vertical-align: top;
+}
+.hsba-kb_item table textarea {
+    display: inline-block;
+    height: 132px;
+}
+.hsba-kb_item table ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.hsba-kb_item table li {
+    margin-bottom: 2px;
+    padding-left: 10px;
+    width: 100%;
+}
+.hsba-kb_item label {
+    display: inline-block;
+    width: 60px;
+}
+.width-70{
+    width: 70%;
+}
+.hsba-table input[type="checkbox"] {
+    vertical-align: middle;
+}
+.hsba-table input[type="checkbox"] {
+    vertical-align: middle;
+}
+.hsba-kb_item > textarea {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.tg td, .tg th {
+    border: 1px solid #4e4e4e;
+    padding: 2px;
+}
+.tg {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+selectorSavingError {
+    width: 50%;
+}
+.tg-031e:first-child {
+    width: 32%;
+}
+.tg th {
+    vertical-align: top;
+}
+.tg span, .tg strong {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.hsba-kb .row-item label {
+    display: inline-block;
+    width: 150px;
+}
+
+
+.hsba-kb .row-item > input[type=text] {
+    width: calc(100% - 170px);
+   /* text-align: center;*/
+}
+
+.input-full{
+    width: calc(100% - 150px) !important;
+}
+
+#hsba_chandoan .row-item label {
+    display: inline-block;
+    min-width: 170px;
+}
+#hsba_chandoan .row-item input[type="text"]:last-child {
+    float: right;
+    margin-right: 10px;
+}
+#hsba_tinhtrangravien .row-item label {
+    display: inline-block;
+    min-width: 170px;
+}
+#hsba_tinhtrangravien .row-item input[type="text"]:last-child {
+    float: right;
+    margin-right: 10px;
+}
+#txt_vaovien_gio {
+    width: 130px;
+}
+#txt_vaovien_ngay {
+    width: 120px;
+}
+#hsba_qlbn .row-item input[type="text"]:last-child {
+    float: right;
+}
+#hsba_qlbn .row-item > label {
+    display: inline-block;
+    width: 170px;
+}
+div[id*="hsba_"] {
+    margin-left: 20px;
+    width: 905px;
+}
+.hsba-kb_item {
+    margin-top: 5px;
+}

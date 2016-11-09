@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+    position: relative;    
+    height: 100%;
+}
+body {
+    text-align:center;
+    min-height: 100%;
+    margin:0;
+    overflow:hidden;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    //height: 50px; /* Height of Footer */
+    width: 100%;
+}
+header {    
+    //height: 50px; /* Height of header */
+    //line-height:50px; /* vertical align the title*/
+    width: 100%;
+    background-color:white; 
+}
+.container{
+      background-color: white;
+      height: 100%;
+      position: absolute;
+      top: 50px;  /* Height of header */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      right: 0;    
+}
+footer{
+    background-color:white; 
+    line-height:50px; /* vertical align the title*/
+}

@@ -1,0 +1,10 @@
+.panel_with_title{
+    padding: 5px 2px 5px 2px;
+}
+.panel_title{
+    color: white; background-color: #009900; font-size: 14px; padding: 6px;
+}
+.panel_body{
+    border: 1px solid #E8E8E8;
+}
+
